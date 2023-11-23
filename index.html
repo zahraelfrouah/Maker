@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>maker</title>
+  <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+  <nav class="continer"><img src="images/logo.svg" alt="logo"></nav>
+  <header >
+    <h1>Get paid for the work<br>
+      you <span>love</span> to do.</h1>
+      <p>The 9-5 grind is so last century. We believe in living life on your own terms.<br> Whether you’re looking to escape the rat race or set up a side hustle,<br> we’ve got you covered.</p>
+      <div class="img"><img src="images/Group.svg" alt="icon"></div>
+  </header>
+  <section class="grid-1 continer">
+    <div class="cards-2">
+      <div class="card1">
+        <img src="images/Group 9.svg" alt="">
+        <h3>Indulge your passions</h3>
+        <p>Your passions shouldn't be just for <br>the weekend. Earn a living doing<br> what you love.</p>
+      </div>
+      <div class="card2">
+        <img src="images/Group 10.svg" alt="">
+        <h3>Gain financial freedom</h3>
+        <p>Start making money work for you.<br> There’s nothing quite like earning<br> while you sleep. </p>
+      </div>
+      <div class="card1">
+        <img src="images/Group 12.svg" alt="">
+        <h3>Indulge your passions</h3>
+        <p>Your passions shouldn't be just for <br>the weekend. Earn a living doing<br> what you love.</p>
+      </div>
+      <div class="card2">
+        <img src="images/Group 7.svg" alt="">
+        <h3>Gain financial freedom</h3>
+        <p>Start making money work for you.<br> There’s nothing quite like earning<br> while you sleep. </p>
+      </div>
+  
+    </div>
+    
+
+  </section>
+  <section class="grid-2 continer">
+    <div class="pricing">
+      <h2>Our pricing plans</h2>
+      <p>We only make money when our creators make money. Our plans are always<br> affordable, and it’s completely free to get started.</p>
+    </div>
+    <div class="cards  continer">
+      <div class="price1">
+        <img src="images/Group 18.png">
+        <h3>Dip your toe</h3>
+        <p>Just getting started? No problem at all! Our free plan<br> will take you a long way.</p>
+        <h2>Free</h2>
+        <ul>
+          <li>Unlimited products</li>
+          <li>Unlimited products</li>
+          <li>Unlimited products</li>
+          <li>Unlimited products</li>
+        </ul>
+      </div>
+      <div class="price2">
+        <img src="images/Group 20.svg" alt="">
+        <h3>Dive right in</h3>
+        <p>Ready for the big time? Our paid plan will help you<br> take your business to the next level.</p>
+        <h2>$25.00</h2>
+        <ul>
+          <li>Custom domain</li>
+          <li>Custom domain</li>
+          <li>Custom domain</li>
+          <li>Custom domain</li>
+        </ul>
+      </div>
+    </div>
+
+  </section>
+  <footer >
+  <div>
+    <h2>Get notified when we launch</h2>
+    <form name="regForm" onsubmit="return validateForm()" method="post">
+      <input class="frm"  type="email" name="email" placeholder="Enter your email">
+      <button>Get notified</button>
+    </form>
+  </div>
+ </footer>
+ <script>
+   function validateForm() {
+            // Get the form elements by name
+            let email = document.forms["regForm"]["email"];
+            let emailRegex = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/; // A valid email format
+            // Check if the email is empty or invalid
+            if (email.value == "" || !emailRegex.test(email.value)) {
+                alert("Please enter a valid email.");
+                email.focus();
+                return false;
+            }
+            return true;
+          }
+ </script>
+</body>
+</html>
